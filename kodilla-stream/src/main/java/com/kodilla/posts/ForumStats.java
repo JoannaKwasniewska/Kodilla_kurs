@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class ForumStats {
     public static double calculateAveragePostsWithAgeGreaterOrEqual(List<User> users, int age) {
         return users.stream()
-                .filter(user -> user.getAge() >= age)
+          //      .filter(user -> user.getAge() >= age)
                 .mapToInt(User::getNumberOfPosts)
                 .average()
                 .orElse(0.0);
@@ -16,7 +16,7 @@ public class ForumStats {
 
     public static double calculateAveragePostsWithAgeLessThan(List<User> users, int age) {
         return users.stream()
-                .filter(user -> user.getAge() < age)
+              //  .filter(user -> user.getAge() < age)
                 .mapToInt(User::getNumberOfPosts)
                 .average()
                 .orElse(0.0);
