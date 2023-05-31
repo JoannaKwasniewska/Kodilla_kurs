@@ -1,5 +1,5 @@
-public class HelloWorld {                           // [1]
-    public static void main(String[] args) {         // [2]
+public class HelloWorld {                           //
+    public static void main(String[] args) {
         System.out.println("Hello from FirstClass!");
         System.out.println("Asia");
         // [3]
