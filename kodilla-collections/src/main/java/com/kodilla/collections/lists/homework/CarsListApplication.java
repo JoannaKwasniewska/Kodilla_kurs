@@ -9,7 +9,12 @@ public class CarsListApplication {
     public static void main(String[] args) {
         ArrayList<Car> cars = new ArrayList<>();
 
-        Car car1 = new Car("Ford", 180);
+        Car car1 = new Car("Ford", 180) {
+            @Override
+            public int getSpeed() {
+                return 0;
+            }
+        };
         Car car2 = new Car("BMW", 220);
         Car car3 = new Car("Audi", 200);
 
